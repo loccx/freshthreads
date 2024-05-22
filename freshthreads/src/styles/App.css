@@ -14,14 +14,6 @@ offwhite
   font-style: normal;
 }
 
-html, body, #root {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-}
-
 body {
   font-family: 'Helio', sans-serif;
   background-color: #323232;
@@ -57,7 +49,7 @@ body {
   color: #fff;
 }
 
-.main-content {
+.main {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -74,4 +66,37 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    font-size: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+p:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+p:nth-child(odd) {
+    animation-delay: 0.2s;
+}
+
+p:nth-child(even) {
+    animation-delay: 0.4s;
 }
