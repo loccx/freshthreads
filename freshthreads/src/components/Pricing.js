@@ -1,7 +1,12 @@
 import React from 'react';
 
 function Pricing() {
-    return <p className="text-gray-600">This is the Pricing page.</p>;
+    return (
+        <>
+            <p className="pricing">1</p>;
+            <p className="pricing">2</p>;
+        </>
+    );
 }
 
 export default Pricing;

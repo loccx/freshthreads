@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Roca2';
+    src: url('../font/rocatwo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.about {
+    margin: 0 auto;
+    font-family: 'Roca2', sans-serif;
+    font-size: 2rem;
+    color: #C8C8C8;
+}
